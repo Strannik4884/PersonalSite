@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="ru">
+    <!-- Начало head -->
+    <head>
+        <title>Моё портфолио</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+        <link href='https://fonts.googleapis.com/css?family=BioRhyme' rel='stylesheet'>
+    </head>
+    <!-- Начало body -->
+    <body>
+        <!-- Контейнер верхнего фиксированного меню -->
+        <header class="header">
+            <!-- Обертка основной части сайта -->
+            <div class="container">
+                <!-- Обертка содержимого верхнего фиксированного меню -->
+                <div class="header_inner">
+                    <!-- Лого сайта -->
+                    <div class="logo">
+                        <a class="logo_link" href="#">ПА</a>
+                    </div>
+                    <!-- Меню навигации сайта -->
+                    <nav class="nav">
+                        <!-- Кнопка "Обо мне" -->
+                        <a class="nav_link" href="#about">
+                            <div class="link_icon"><img src="icons/person_icon.svg"></div>
+                            <div class="link_text"><span>Обо мне</span></div>
+                        </a>
+                        <!-- Кнопка "Навыки" -->
+                        <a class="nav_link" href="#skills">
+                            <div class="link_icon"><img src="icons/skills_icon.svg"></div>
+                            <div class="link_text"><span>Навыки</span></div>
+                        </a>
+                        <!-- Кнопка "Проекты" -->
+                        <a class="nav_link" href="#projects">
+                            <div class="link_icon"><img src="icons/projects_icon.svg"></div>
+                            <div class="link_text"><span>Проекты</span></div>
+                        </a>
+                        <!-- Кнопка "Вконтакте" -->
+                        <a class="nav_link_vk" href="https://vk.com/id152191562">
+                            <div class="link_icon"><img src="icons/vk_icon.svg"></div>
+                            <div class="link_text"><span>Вконтакте</span></div>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Контейнер блока "Обо мне" -->
+        <div id="about">
+            <!-- Обертка основной части сайта -->
+            <div class="container">
+                <!-- Обертка содержимого блока "Обо мне" -->
+                <div class="about_inner">
+                    <!-- Главное фото -->
+                    <div id="main_photo">
+                        <img src="images/main_photo.png">
+                    </div>
+                    <!-- Текст с личным описанием -->
+                    <div class="about_block">
+                        <!-- Заголовок текста -->
+                        <div id="about_title">
+                            <span>Добро пожаловать!</span>
+                        </div>
+                        <!-- Основное содержимое -->
+                        <div id="about_text">
+                            <p>Меня зовут Пархомов Александр и я студент третьего курса ЛГТУ по направлению <a class="intext_link" href="http://www.stu.lipetsk.ru/struct/kaf/asu/edu/bak/02.03.03.html">
+                               "Математическое обеспечение и администрирование информационных систем"</a>.</p>
+                            <p>В данном портфолио я собрал самую актуальную и интересную информацию о себе:
+                               навыки, проекты (как в рамках обучения в ВУЗе, так и собственные), контактную информацию.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Контейнер блока "Навыки" -->
+        <div id="skills">
+            <!-- Обертка основной части сайта -->
+            <div class="container">
+                <!-- Обертка содержимого блока "Навыки" -->
+                <div class="skills_inner">
+                    <!-- Освновной блок с описанием навыков -->
+                    <div class="skills_block">
+                         <!-- Заголовок блока -->
+                         <div id="skills_title">
+                            <span>Профессиональные навыки</span>
+                        </div>
+                        <!-- Таблица навыков -->
+                        <div class="skills_table">
+                            <!-- Колонка с языками программирования-->
+                            <div id="langs">
+                                <!-- Название колонки -->
+                                <div class="skill_title">
+                                    <a href="#langs_title" class="intext_link">ЯЗЫКИ ПРОГРАММИРОВАНИЯ</a>
+                                </div>
+                                <!-- Список языков -->
+                                <div class="list_view">
+                                    <!-- C/C++ -->
+                                    <div class="item_container">
+                                        <!-- Иконка элемента -->
+                                        <div class="item_icon">
+                                            <img src="icons/c_icon.png">
+                                        </div>
+                                        <!-- Имя элемента -->
+                                        <div class="item_name">
+                                            <span class="list_item">C/C++</span>
+                                        </div>
+                                        <!-- Процент навыка -->
+                                        <div class="item_per">
+                                            <span class="list_item">67%</span>
+                                        </div>
+                                    </div>
+                                    <!-- C# -->
+                                    <div class="item_container">
+                                        <!-- Иконка элемента -->
+                                        <div class="item_icon">
+                                            <img src="icons/csharp_icon.png">
+                                        </div>
+                                        <!-- Имя элемента -->
+                                        <div class="item_name">
+                                            <span class="list_item">C#</span>
+                                        </div>
+                                        <!-- Процент навыка -->
+                                        <div class="item_per">
+                                            <span class="list_item">75%</span>
+                                        </div>
+                                    </div>
+                                    <!-- Java -->
+                                    <div class="item_container">
+                                        <!-- Иконка элемента -->
+                                        <div class="item_icon">
+                                            <img src="icons/java_icon.svg">
+                                        </div>
+                                        <!-- Имя элемента -->
+                                        <div class="item_name">
+                                            <span class="list_item">Java</span>
+                                        </div>
+                                        <!-- Процент навыка -->
+                                        <div class="item_per">
+                                            <span class="list_item">44%</span>
+                                        </div>
+                                    </div>
+                                    <!-- Python -->
+                                    <div class="item_container">
+                                        <!-- Иконка элемента -->
+                                        <div class="item_icon">
+                                            <img src="icons/python_icon.svg">
+                                        </div>
+                                        <!-- Имя элемента -->
+                                        <div class="item_name">
+                                            <span class="list_item">Python</span>
+                                        </div>
+                                        <!-- Процент навыка -->
+                                        <div class="item_per">
+                                            <span class="list_item">32%</span>
+                                        </div>
+                                    </div>
+                                    <!-- SQL -->
+                                    <div class="item_container">
+                                        <!-- Иконка элемента -->
+                                        <div class="item_icon">
+                                            <img src="icons/sql_icon.svg">
+                                        </div>
+                                        <!-- Имя элемента -->
+                                        <div class="item_name">
+                                            <span class="list_item">SQL</span>
+                                        </div>
+                                        <!-- Процент навыка -->
+                                        <div class="item_per">
+                                            <span class="list_item">56%</span>
+                                        </div>
+                                    </div>
+                                    <!-- HTML/CSS/JS -->
+                                    <div class="item_container">
+                                        <!-- Иконка элемента -->
+                                        <div class="item_icon">
+                                            <img src="icons/html_icon.svg">
+                                        </div>
+                                        <!-- Имя элемента -->
+                                        <div class="item_name">
+                                            <span class="list_item">HTML/CSS/JS</span>
+                                        </div>
+                                        <!-- Процент навыка -->
+                                        <div class="item_per">
+                                            <span class="list_item">23%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tech">
+                                <div class="skill_title">
+                                    <a href="#tech_title" class="intext_link">ТЕХНОЛОГИИ И ИНСТРУМЕНТЫ</a>
+                                    <!-- Список языков -->
+                                </div>
+                                <div class="list_view">
+                                    <!-- Структуры данных -->
+                                    <div class="item_container">
+                                        <!-- Иконка элемента -->
+                                        <div class="item_icon">
+                                            <img src="icons/data_structures_icon.svg">
+                                        </div>
+                                        <!-- Имя элемента -->
+                                        <div class="item_name">
+                                            <span class="list_item">Структуры данных</span>
+                                        </div>
+                                        <!-- Процент навыка -->
+                                        <div class="item_per">
+                                            <span class="list_item">78%</span>
+                                        </div>
+                                    </div>
+                                    <!-- Алгоритмы -->
+                                    <div class="item_container">
+                                        <!-- Иконка элемента -->
+                                        <div class="item_icon">
+                                            <img src="icons/algorithms_icon.svg">
+                                        </div>
+                                        <!-- Имя элемента -->
+                                        <div class="item_name">
+                                            <span class="list_item">Алгоритмы</span>
+                                        </div>
+                                        <!-- Процент навыка -->
+                                        <div class="item_per">
+                                            <span class="list_item">69%</span>
+                                        </div>
+                                    </div>
+                                    <!-- Сети -->
+                                    <div class="item_container">
+                                        <!-- Иконка элемента -->
+                                        <div class="item_icon">
+                                            <img src="icons/networks_icon.svg">
+                                        </div>
+                                        <!-- Имя элемента -->
+                                        <div class="item_name">
+                                            <span class="list_item">Сети</span>
+                                        </div>
+                                        <!-- Процент навыка -->
+                                        <div class="item_per">
+                                            <span class="list_item">15%</span>
+                                        </div>
+                                    </div>
+                                    <!-- REST API -->
+                                    <div class="item_container">
+                                        <!-- Иконка элемента -->
+                                        <div class="item_icon">
+                                            <img src="icons/rest_api_icon.svg">
+                                        </div>
+                                        <!-- Имя элемента -->
+                                        <div class="item_name">
+                                            <span class="list_item">REST API</span>
+                                        </div>
+                                        <!-- Процент навыка -->
+                                        <div class="item_per">
+                                            <span class="list_item">35%</span>
+                                        </div>
+                                    </div>
+                                    <!-- GitHub -->
+                                    <div class="item_container">
+                                        <!-- Иконка элемента -->
+                                        <div class="item_icon">
+                                            <img src="icons/github_icon.svg">
+                                        </div>
+                                        <!-- Имя элемента -->
+                                        <div class="item_name">
+                                            <span class="list_item">GitHub</span>
+                                        </div>
+                                        <!-- Процент навыка -->
+                                        <div class="item_per">
+                                            <span class="list_item">32%</span>
+                                        </div>
+                                    </div>
+                                    <!-- GraphQL -->
+                                    <div class="item_container">
+                                        <!-- Иконка элемента -->
+                                        <div class="item_icon">
+                                            <img src="icons/sql_icon.svg">
+                                        </div>
+                                        <!-- Имя элемента -->
+                                        <div class="item_name">
+                                            <span class="list_item">GraphQL</span>
+                                        </div>
+                                        <!-- Процент навыка -->
+                                        <div class="item_per">
+                                            <span class="list_item">10%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Контейнер блока "Проекты" -->
+        <div id="projects">
+            <!-- Обертка основной части сайта -->
+            <div class="container">
+                <!-- Обертка содержимого блока "Проекты" -->
+                <div class="projects_inner">
+                    <!-- Освновной блок с описанием проектов -->
+                    <div class="projects_block">
+                       <!-- Заголовок блока -->
+                       <div id="projects_title">
+                            <span>Мои проекты</span>
+                            <!-- Таблица проектов -->
+                            <div class="projects_table">
+                                <!-- Расписание ЛГТУ-->
+                                <div id="lstu_schedule">
+                                    <!-- Заголовок проекта-->
+                                    <div class="project_title">
+                                        <a href="#lstu_schedule" class="intext_link">Расписание ЛГТУ</a>
+                                    </div>
+                                    <!-- Описание проекта -->
+                                    <div class="project_description">
+                                        <span>Удобное приложение для мобильных устройств с расписанием занятий ЛГТУ</span>
+                                    </div>
+                                    <!-- Лого проекта -->
+                                    <div class="project_logo">
+                                        <img src="images/lstu_schedule_logo.png">
+                                    </div>
+                                    <!-- Статус проекта -->
+                                    <div class="project_description">
+                                        <span<>Статус проекта: активная разработка</span>
+                                    </div>
+                                </div>
+                                <!-- Просмотрщик изображений-->
+                                <div id="image_viewer">
+                                    <!-- Заголовок проекта-->
+                                    <div class="project_title">
+                                        <a href="#image_viewer" class="intext_link">Просмотрщик изображений</a>
+                                    </div>
+                                    <!-- Описание проекта -->
+                                    <div class="project_description">
+                                        <span>Удобный аналог системного просмотрщика изображений</span>
+                                    </div>
+                                    <!-- Лого проекта -->
+                                    <div class="project_logo">
+                                        <img src="images/image_viewer_logo.png">
+                                    </div>
+                                    <!-- Статус проекта -->
+                                    <div class="project_description">
+                                        <span<>Статус проекта: завершён</span>
+                                    </div>
+                                </div>
+                                <!-- Хакатон от НЛМК-->
+                                <div id="nlmk_hack">
+                                    <!-- Заголовок проекта-->
+                                    <div class="project_title">
+                                        <a href="#nlmk_hack" class="intext_link">Хакатон от НЛМК</a>
+                                    </div>
+                                    <!-- Описание проекта -->
+                                    <div class="project_description">
+                                        <span>Прогнозирование электроэнергии на установке печь-ковш</span>
+                                    </div>
+                                    <!-- Лого проекта -->
+                                    <div class="project_logo">
+                                        <img src="images/nlmk_hack_logo.png">
+                                    </div>
+                                    <!-- Статус проекта -->
+                                    <div class="project_description">
+                                        <span<>Статус проекта: занял 3-е место</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Контейнер нижней части сайта -->
+        <footer class="footer">
+            <!-- Обертка основной части сайта -->
+            <div class="container">
+                <!-- Обертка содержимого нижней части сайта -->
+                <div class="footer_inner">
+                    <!-- Текст копирайта -->
+                    <div class="copyright_text">
+                        2020 © Design by Alex Parkhomov
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

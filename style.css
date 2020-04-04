@@ -1,0 +1,406 @@
+/* настройка дефолтных стилей */
+body{
+    margin: 0
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin:  0;
+}
+
+/* стиль основного контейнера сайта */
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* стиль всей верхней фиксированной панели */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #32332D;
+}
+
+/* стиль содержимого верхней фиксированной панели */
+.header_inner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* стиль лого */
+.logo{
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 55px;
+    color: #ffffff;
+}
+
+/* стиль меню */
+.nav{
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 55px;
+    color: #ffffff;
+}
+
+/* стиль для ссылок меню */
+.nav_link, .nav_link_vk{
+    width: 100px;
+    padding-top: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* стиль для выделеной кнопки меню */
+.nav_link:hover, .nav_link_vk:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.nav_link_vk{
+    margin: 0 50px;
+}
+
+/* убираем отступ крайней кнопки при малом размере */
+@media (max-width: 620px){
+    .nav_link_vk{
+        margin: 0;
+    }
+}
+
+/* стиль для ссылки иконки */
+.logo_link{
+    padding-top: 8px;
+    padding-left: 15px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* стиль для иконки кнопки меню */
+.link_icon{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+/* стиль для текста кнопки меню*/
+.link_text{
+    color: #9F9F9F;
+}
+
+/* стилья для ссылки в тексте */
+.intext_link{
+    color: #000000
+}
+
+/* стиль содержимого контейнера блока "Обо мне" */
+.about_inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* перемещаем правый блок "Обо мне" вниз при малом размере экрана */
+@media (max-width: 1480px){
+    .about_inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #main_photo{
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+}
+
+/* стилья содержимого блока "Обо мне" */
+.about_block{
+    margin: auto;
+    width: 960px;
+    height: 720px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* меняем размер у блока */
+@media (max-width: 960px){
+    .about_block{
+        width: 800px;
+        height: 700px;
+    }
+}
+
+/* меняем размер у блока */
+@media (max-width: 800px){
+    .about_block{
+        width: 600px;
+        height: 800px;
+    }
+}
+
+/* стиль заголовка блока */
+#about_title{
+    padding-top: 40px;
+    padding-left: 40px;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 55px;
+}
+
+/* стиль текста блока */
+#about_text{
+    padding-left: 40px;
+    padding-right: 40pxs;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 55px;
+}
+
+/* отступ между блоками */
+#skills{
+    padding-top: 50px;
+}
+
+/* стиль содержимого контейнера блока "Навыки" */
+.skills_inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* стилья содержимого блока "Навыки" */
+.skills_block{
+    margin: auto;
+    width: 90%;
+    height: 600px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* стиль заголовка блока */
+#skills_title{
+    padding-top: 10px;
+    text-align: center;
+    margin: auto;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 55px;
+}
+
+/* стиль таблицы навыков */
+.skills_table{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* выстраиваем навыки в столбик и меняем размер контейнера */
+@media (max-width: 1200px){
+    .skills_table{
+        padding-top: 50px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .skills_block{
+        height: 1100px;
+    }
+
+    #langs, #tech{
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+/* стиль блока навыка */
+#langs, #tech {
+    width: 500px;
+    height: 450px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* стиль названия навыка */
+.skill_title{  
+    text-align: center;
+    margin: auto 0;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 55px;
+}
+
+/* список навыков */
+.list_view{
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* стиль текста для текста элемента списка*/
+.list_item{
+    font-family: Times New Roman;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 55px;
+}
+
+/* стиль контейнера элемента списка*/
+.item_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* стиль для имени навыка в списке */
+.item_name{
+    width: 300px;
+}
+
+/* отступ между блоками */
+#projects{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* стиль содержимого контейнера блока "Проекты" */
+.projects_inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* стилья содержимого блока "Проекты" */
+.projects_block{
+    margin: auto;
+    width: 90%;
+    height: 600px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* стиль заголовка блока */
+#projects_title{
+    padding-top: 10px;
+    text-align: center;
+    margin: auto;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 55px;
+}
+
+/* стиль таблицы проектов */
+.projects_table{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* выстраиваем проекты в столбик и меняем размер контейнера*/
+@media (max-width: 1480px){
+    .projects_table{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #lstu_schedule, #image_viewer, #nlmk_hack{
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .projects_block{
+        height: 1575px;
+    }
+}
+
+/* стиль блока проекта */
+#lstu_schedule, #image_viewer, #nlmk_hack{
+    width: 435px;
+    height: 450px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* стиль названия проекта */
+.project_title{   
+    margin: auto 0;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 55px;
+}
+
+/* стиль описания проекта */
+.project_description{
+    padding-bottom: 30px;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;  
+}
+
+/* стиль нижнего контейнера сайта */
+.footer {
+    width: 100%;
+    height: 120px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #32332D;
+}
+
+/* стиль содержимого нижнего контейнера */
+.footer_inner{
+    text-align: center;
+}
+
+/* стиль текста нижнего контейнера */
+.copyright_text{
+    padding-top: 30px;
+    margin: 0 auto;
+    font-family: BioRhyme;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 55px;
+    color: #A5A5A3;
+}
